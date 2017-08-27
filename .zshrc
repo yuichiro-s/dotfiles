@@ -84,6 +84,7 @@ zstyle ':completion:*:default' menu select=2
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 # ls
+alias ls='ls -GF'
 alias ll='ls -l'
 alias la='ll -a'
 cl()
