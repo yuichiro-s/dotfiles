@@ -84,7 +84,11 @@ zstyle ':completion:*:default' menu select=2
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 # ls
-alias ls='ls -GF'
+if [ "$(uname)" = 'Darwin' ]; then
+  alias ls='ls -GF'
+else
+  alias ls='ls --color=auto -F'
+fi
 alias ll='ls -l'
 alias la='ll -a'
 cl()
