@@ -1,3 +1,5 @@
+source ~/.zplug/init.zsh
+
 # auto completion
 fpath=($HOME/dotfiles/zsh-completions/src(N-/) $fpath)
 autoload -U compinit
@@ -125,4 +127,5 @@ alias gs='git status'
 alias gss='git status -s'
 
 # enhancd
-source ~/.enhancd/init.sh
+zplug "b4b4r07/enhancd", use:init.sh
+zplug load
