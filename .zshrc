@@ -126,6 +126,9 @@ alias gp='git pull'
 alias gs='git status'
 alias gss='git status -s'
 
-# enhancd
+# plugins
 zplug "b4b4r07/enhancd", use:init.sh
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-completions"
+
 zplug load
