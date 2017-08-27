@@ -6,23 +6,23 @@ autoload -U compinit
 compinit -u
 
 # history search
-function fzy-select-history() {
+function fzf-select-history() {
   local tac
   if which tac > /dev/null; then
     tac="tac"
   else
     tac="tail -r"
   fi
-  BUFFER=$(\history -n 1 | eval $tac | fzy --query "$LBUFFER")
+  BUFFER=$(\history -n 1 | eval $tac | fzf --query "$LBUFFER")
   CURSOR=$#BUFFER
   zle clear-screen
 }
 
 function search-history() {
-  if type fzy > /dev/null 2>&1; then
-    fzy-select-history
+  if type fzf > /dev/null 2>&1; then
+    fzf-select-history
   else
-    # fzy not found
+    # fzf not found
     zle history-incremental-search-backward
   fi
 }
@@ -48,7 +48,7 @@ setopt extended_glob
 typeset -A abbreviations
 abbreviations=(
 "L"    "| less"
-"F"    "| fzy"
+"F"    "| fzf"
 )
 
 magic-abbrev-expand() {

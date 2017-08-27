@@ -5,7 +5,7 @@
 ## zsh
 - install zplug (See: https://github.com/zplug/zplug)
 - install zplug plugins (`zplug install`)
-- install fzy
+- install fzf
 - source .zshrc
 
 ## vim
