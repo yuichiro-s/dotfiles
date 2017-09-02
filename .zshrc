@@ -128,5 +128,8 @@ alias gss='git status -s'
 # plugins
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "zsh-users/zsh-completions"
+zplug "modules/osx", from:prezto, if:"[[ $OSTYPE == *darwin* ]]"
+zplug "modules/prompt", from:prezto
+zstyle ':prezto:module:prompt' theme 'pure'
 
 zplug load
