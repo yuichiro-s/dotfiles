@@ -30,7 +30,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 nnoremap <C-e> :NERDTreeToggle<CR>
 
 Plug 'junegunn/fzf', { 'do': './install --bin' }
-Plug 'junegunn/fzf.vim'
+Plug 'yuichiro-s/fzf.vim'
 let g:fzf_buffers_jump = 1
 nnoremap <silent> <leader>x  <esc>:History<cr>
 nnoremap <silent> <leader>z  <esc>:Files<cr>
