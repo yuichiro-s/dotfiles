@@ -125,6 +125,9 @@ alias gp='git pull'
 alias gs='git status'
 alias gss='git status -s'
 
+# cp -> rsync
+alias cp="rsync -avh --progress"
+
 # plugins
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "zsh-users/zsh-completions"
