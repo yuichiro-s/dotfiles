@@ -87,6 +87,8 @@ Plug 'google/vim-glaive'
 " rust
 Plug 'rust-lang/rust.vim'
 
+Plug 'majutsushi/tagbar'
+
 call plug#end()
 
 " display
@@ -197,3 +199,6 @@ augroup autoformat_settings
   autocmd FileType java AutoFormatBuffer google-java-format
   autocmd FileType python AutoFormatBuffer yapf
 augroup END
+
+" tagbar
+nnoremap <F8> :TagbarToggle<CR>
