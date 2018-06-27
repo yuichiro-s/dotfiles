@@ -138,13 +138,10 @@ syntax on
 " needed for lightline.vim
 set laststatus=2
 let g:lightline = {
-      \ 'component_function': {
-      \   'filename': 'LightLineFilename'
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'relativepath', 'modified' ] ]
       \ }
       \ }
-function! LightLineFilename()
-  return expand('%:p:h')
-endfunction
 
 " colorschehme
 set t_Co=256
