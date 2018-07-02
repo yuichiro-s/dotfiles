@@ -1,4 +1,4 @@
-source ~/.zplug/init.zsh
+#source ~/.zplug/init.zsh
 
 # auto completion
 fpath=($HOME/dotfiles/zsh-completions/src(N-/) $fpath)
@@ -129,10 +129,12 @@ alias gss='git status -s'
 alias cp="rsync -avh --progress"
 
 # plugins
-zplug "b4b4r07/enhancd", use:init.sh
-zplug "zsh-users/zsh-completions"
-zplug "modules/osx", from:prezto, if:"[[ $OSTYPE == *darwin* ]]"
-zplug "modules/prompt", from:prezto
-zstyle ':prezto:module:prompt' theme 'pure'
+#zplug "b4b4r07/enhancd", use:init.sh
+#zplug "zsh-users/zsh-completions"
+#zplug "modules/osx", from:prezto, if:"[[ $OSTYPE == *darwin* ]]"
+#zplug "modules/prompt", from:prezto
+#zstyle ':prezto:module:prompt' theme 'pure'
 
-zplug load
+#zplug load
+
+export PROMPT='%(?.%F{green}.%F{red})❯%f '

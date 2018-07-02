@@ -135,6 +135,11 @@ syntax on
 
 " needed for lightline.vim
 set laststatus=2
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'relativepath', 'modified' ] ]
+      \ }
+      \ }
 
 " colorschehme
 set t_Co=256
