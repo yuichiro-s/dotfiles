@@ -110,7 +110,7 @@ alias gb='git branch'
 alias gbd='git branch -d'
 alias gc='git commit'
 alias gcm='git commit -m'
-alias go='git checkout'
+#alias go='git checkout'
 alias gob='git checkout -b'
 alias gom='git checkout master'
 alias gd='git diff'
@@ -124,9 +124,6 @@ alias gm='git merge'
 alias gp='git pull'
 alias gs='git status'
 alias gss='git status -s'
-
-# cp -> rsync
-alias cp="rsync -avh --progress"
 
 # plugins
 #zplug "b4b4r07/enhancd", use:init.sh
